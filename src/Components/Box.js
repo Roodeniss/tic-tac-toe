@@ -13,6 +13,10 @@ export default function Box(props) {
     // function toggle() {
     //     setOn(prevOn => !prevOn)
     // }
+
+    function reload(){
+        window.location.reload();
+    }
     
     return (
         <>
@@ -32,7 +36,7 @@ export default function Box(props) {
             }
             `}
             </style> */}
-            <button className="reset">Reiniciar</button>
+            <button className="reset" onClick={reload}>Reiniciar</button>
             <style>{`
                 .reset{
                     margin-top: 20%;

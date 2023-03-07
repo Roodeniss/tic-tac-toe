@@ -10,6 +10,7 @@ export default function Board() {
     const winningPositions = [
         [1, 2, 3],
         [1, 5, 9],
+        [1, 4, 7],
         [2, 5, 8],
         [3, 6, 9],
         [3, 5, 7],
@@ -51,31 +52,31 @@ export default function Board() {
         <>
             <Title player={player} />
             <div class="board">
-                <div id="1" class="element" onClick={() => turn(1)} style={{ pointerEvents: winner() !== null ? "none" : "auto"}}>
+                <div id="1" className="element" onClick={() => turn(1)} style={{ pointerEvents: winner() !== null ? "none" : "auto"}}>
                     {squareStates[0] === "player1" ? <Icons turno="player1" /> : squareStates[0] === "player2" ? <Icons turno="player2" /> : null}
                 </div>
-                <div id="2" class="element" onClick={() => turn(2)} style={{ pointerEvents: winner() !== null ? "none" : "auto"}}>
+                <div id="2" className="element" onClick={() => turn(2)} style={{ pointerEvents: winner() !== null ? "none" : "auto"}}>
                     {squareStates[1] === "player1" ? <Icons turno="player1" /> : squareStates[1] === "player2" ? <Icons turno="player2" /> : null}
                 </div>
-                <div id="3" class="element" onClick={() => turn(3)} style={{ pointerEvents: winner() !== null ? "none" : "auto"}}>
+                <div id="3" className="element" onClick={() => turn(3)} style={{ pointerEvents: winner() !== null ? "none" : "auto"}}>
                     {squareStates[2] === "player1" ? <Icons turno="player1" /> : squareStates[2] === "player2" ? <Icons turno="player2" /> : null}
                 </div>
-                <div id="4" class="element" onClick={() => turn(4)} style={{ pointerEvents: winner() !== null ? "none" : "auto"}}>
+                <div id="4" className="element" onClick={() => turn(4)} style={{ pointerEvents: winner() !== null ? "none" : "auto"}}>
                     {squareStates[3] === "player1" ? <Icons turno="player1" /> : squareStates[3] === "player2" ? <Icons turno="player2" /> : null}
                 </div>
-                <div id="5" class="element" onClick={() => turn(5)} style={{ pointerEvents: winner() !== null ? "none" : "auto"}}>
+                <div id="5" className="element" onClick={() => turn(5)} style={{ pointerEvents: winner() !== null ? "none" : "auto"}}>
                     {squareStates[4] === "player1" ? <Icons turno="player1" /> : squareStates[4] === "player2" ? <Icons turno="player2" /> : null}
                 </div>
-                <div id="6" class="element" onClick={() => turn(6)} style={{ pointerEvents: winner() !== null ? "none" : "auto"}}>
+                <div id="6" className="element" onClick={() => turn(6)} style={{ pointerEvents: winner() !== null ? "none" : "auto"}}>
                     {squareStates[5] === "player1" ? <Icons turno="player1" /> : squareStates[5] === "player2" ? <Icons turno="player2" /> : null}
                 </div>
-                <div id="7" class="element" onClick={() => turn(7)} style={{ pointerEvents: winner() !== null ? "none" : "auto"}}>
+                <div id="7" className="element" onClick={() => turn(7)} style={{ pointerEvents: winner() !== null ? "none" : "auto"}}>
                     {squareStates[6] === "player1" ? <Icons turno="player1" /> : squareStates[6] === "player2" ? <Icons turno="player2" /> : null}
                 </div>
-                <div id="8" class="element" onClick={() => turn(8)} style={{ pointerEvents: winner() !== null ? "none" : "auto"}}>
+                <div id="8" className="element" onClick={() => turn(8)} style={{ pointerEvents: winner() !== null ? "none" : "auto"}}>
                     {squareStates[7] === "player1" ? <Icons turno="player1" /> : squareStates[7] === "player2" ? <Icons turno="player2" /> : null}
                 </div>
-                <div id="9" class="element" onClick={() => turn(9)} style={{ pointerEvents: winner() !== null ? "none" : "auto"}}>
+                <div id="9" className="element" onClick={() => turn(9)} style={{ pointerEvents: winner() !== null ? "none" : "auto"}}>
                     {squareStates[8] === "player1" ? <Icons turno="player1" /> : squareStates[8] === "player2" ? <Icons turno="player2" /> : null}
                 </div>
                 <style>
