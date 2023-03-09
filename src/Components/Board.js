@@ -79,22 +79,6 @@ export default function Board() {
                 <div id="9" className="element" onClick={() => turn(9)} style={{ pointerEvents: winner() !== null ? "none" : "auto" }}>
                     {squareStates[8] === "player1" ? <Icons turno="player1" /> : squareStates[8] === "player2" ? <Icons turno="player2" /> : null}
                 </div>
-                <style>
-                    {`
-                    .board{
-                    display: grid;
-                    grid-template-columns: repeat(3, 1fr);
-                    grid-template-rows: repeat(3, 1fr); 
-                    }
-                    .element{
-                    width: 200px;
-                    height: 100%;
-                    cursor: pointer;
-                    border: 1px solid black;
-                    margin-top: 100px;
-                    }
-                    `}
-                </style>
             </div>
         </>
     )

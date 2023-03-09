@@ -1,5 +1,5 @@
 import React from "react"
-import Box from "./Components/Box"
+import Main from "./Components/Main"
 
 export default function App() {
     // const [squares, setSquares] = React.useState(boxes)
@@ -11,7 +11,7 @@ export default function App() {
     return (
         <main>
             {/* {squareElements} */}
-            <Box/>
+            <Main/>
         </main>
     )
 }

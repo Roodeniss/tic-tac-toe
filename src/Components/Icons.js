@@ -3,19 +3,6 @@ export default function Icon(props) {
         <div className="icon">
             {props.turno === 'player1' && <Circle />}
             {props.turno === 'player2' && <Tick />}
-            <style>
-                {`
-                .icon{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-                svg{
-                    width: 50px;
-                    height: 50px;
-                }
-                `}
-            </style>
         </div>
     )
 };
