@@ -1,5 +1,4 @@
 import React from "react"
-import Title from "../Components/Title"
 import Board from "../Components/Board"
 
 export default function Box(props) {
@@ -9,7 +8,6 @@ export default function Box(props) {
     
     return (
         <>
-            
             <Board />
             <button className="reset" onClick={reload}>Reiniciar</button>
             <style>{`
@@ -17,8 +15,21 @@ export default function Box(props) {
                     background-color: #2a3b47;
                 }
                 .reset{
+                    background-color: #bb86fc;
+                    text-decoration: none;
+                    border: 2px solid transparent;
+                    font-weight: bold;
+                    padding: 12px 30px;
+                    border-radius: 30px;
+                    transition: 0.4s;
                     margin-top: 20%;
                     margin-left: 5%;
+                    cursor: pointer;
+                }
+                button:hover {
+                    color: white;
+                    background-color: transparent;
+                    border: 2px solid #bb86fc;
                     cursor: pointer;
                 }
                 `}
