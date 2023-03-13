@@ -2,6 +2,7 @@ import React from "react"
 import { useState } from "react"
 import Title from "./Title"
 import Icons from "../Components/Icons"
+import Card from "../Components/Card"
 
 export default function Board() {
     const [player, setPlayer] = useState("player1");
@@ -79,6 +80,7 @@ export default function Board() {
                 <div id="9" className="element" onClick={() => turn(9)} style={{ pointerEvents: winner() !== null ? "none" : "auto" }}>
                     {squareStates[8] === "player1" ? <Icons turno="player1" /> : squareStates[8] === "player2" ? <Icons turno="player2" /> : null}
                 </div>
+                {winner() !== null ? <Card name={player}/> : null /* the winner is a player less than the actual player from the hook*/}
             </div>
         </>
     )
